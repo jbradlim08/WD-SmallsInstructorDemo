@@ -9,12 +9,12 @@ html {
   max-width: 100%;
 }
 
-navbar { 
+.navbar { 
   background-color: #EEECE6;
 }
 
 .navbar-toggler {
-border: transparent;
+  border: transparent;
 }
 
 .offcanvas-header, .offcanvas-body{
@@ -36,20 +36,20 @@ hr {
   image-rendering: crisp-edges;
 }
 
-#main{
+#main {
   background-color: #EEECE6;
   padding-top: 25px;
   padding-bottom: 25px;
 }
 
 h1 {
-  font-family: "Sometype Mono", monospace;
+  font-family: 'Sometype Mono', monospace;
   font-optical-sizing: auto;
   font-weight: 400;
   font-size: 100px;
 }
 
-.tag{
+.tag {
   max-width: 100%;
   width: 500px;
   height: auto;
@@ -158,7 +158,9 @@ p {
 /* MEDIA QUERIES START HERE */
 
  /* TABLET MEDIA QUERY */
-@media (max-width: 768px) {
+
+ /* These below are already applied because of bootstrap */
+/* @media (max-width: 768px) {
   .container {
     display: flex;
     flex-direction: column;
@@ -173,7 +175,19 @@ p {
   .container .text {
     text-align: center;
   }
+} */
+
+/* These will apply on top of bootstrap */
+@media (max-width: 768px) {
+  .feature-col {
+    padding: 1.5rem;
+  }
+
+  .description {
+    padding: 1.5rem;
+  }
 }
+
  /* MOBILE MEDIA QUERY */
  @media (max-width: 480px) {
   h1 {
