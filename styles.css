@@ -2,6 +2,7 @@ body {
   background-color: #ffec65;
   overflow-x: hidden;
   max-width: 100%;
+  font-family: 'Lato', sans-serif;
 }
 
 html {
@@ -43,10 +44,14 @@ hr {
 }
 
 h1 {
-  font-family: 'Sometype Mono', monospace;
+  font-family: 'Rubik', sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-size: 100px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Rubik', sans-serif;
 }
 
 .tag {
@@ -157,6 +162,58 @@ p {
 
 /* MEDIA QUERIES START HERE */
  /* TABLET MEDIA QUERY */
+@media (max-width: 991.98px) {
+  .description {
+    padding: 2.5rem;
+  }
 
- 
+  .description h3 {
+    font-size: 2rem;
+  }
+
+  .description p,
+  #How_it_works li {
+    font-size: 1.05rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #Why-Smalls,
+  #How_it_works,
+  #say_hello {
+    padding: 14px;
+    margin-bottom: 1.25rem;
+  }
+
+  .description {
+    padding: 1.5rem 1rem;
+    text-align: left;
+  }
+
+  .description h3 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+
+  .description p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  #How_it_works .feature-col {
+    order: -1;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  .description {
+    padding: 1.25rem 0.75rem;
+  }
+}
 
